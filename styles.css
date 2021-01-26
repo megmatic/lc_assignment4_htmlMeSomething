@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+    line-height: 1.5em;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #FFFADE;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+} 
+
+h2 {
+    text-transform: uppercase;
+    padding-bottom: 0.7em;
+} 
+
+.highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DAEBED 65%);
+    display: inline;
+}
+
+span {
+    padding-top: 20px;
+}
+
+.hero-image {
+    /* Sizing stuff */
+    height: 70vh;
+    width: 100vw;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text stuff */
+    text-align: center;
+    color:  #FFEEC7;
+
+    /* Background image stuff */
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/nhq202012130001.jpg);
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+ 
+}
+
+.main-header {
+    padding: 0.7em;
+    letter-spacing: 0.04em;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.7rem 0px;
+    background-color: #091758;
+}
+
+.nav-links a {
+    color: #FFEEC7;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #ADA9BB;
+}
+
+img {
+    width: 500px;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    
+}
+.row:nth-child(2n+1){
+    flex-direction:row-reverse
+} 
+
+
+.col {
+    display: flex; 
+    flex-basis:100%;
+
+    width: 50%;
+    min-height: 60vh;
+    background-position: center 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding-left:3em;
+    padding-right: 3em;
+    color: #091758;
+}
+
+.block-img {
+    max-width: 100%;
+    object-fit: cover;
+    background-position: center 50%;
+    overflow: hidden;
+}
+
+.left img{
+    box-shadow: -13px 13px #091758;
+}
+
+.right img {
+    box-shadow: 13px 13px #091758;
+}
+
+.main-content {
+    overflow: hidden;
+}
+
+.sources {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    background-color: #091758;
+}
+.footer {
+    text-align: center;
+    color: #FFFADE;
+    font-size: 0.7em;
+    justify-content: center;
+    align-items: center;
+    background-color: #091758;
+    padding: 3em 30em;
+}
